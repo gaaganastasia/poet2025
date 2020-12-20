@@ -1,0 +1,9 @@
+.main-page__subtitle {
+  max-width: 606px;
+  text-align: center;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 125%;
+  opacity: .5;
+  margin-bottom: 81px;
+}

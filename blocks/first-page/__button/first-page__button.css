@@ -1,0 +1,16 @@
+.first-page__button {
+  margin: 28px 0 109px;
+  width: 220px;
+  height: 45px;
+  align-self: center;
+  border: 0;
+  border-radius: 59px;
+  background-color: #000000;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.first-page__button:hover {
+  opacity: 0.8;
+  transition: 0.3s;
+}

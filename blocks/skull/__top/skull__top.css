@@ -1,0 +1,7 @@
+.skull__top {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform: translate(5px, 37px);
+  transition: transform ease-in-out 2s;
+}

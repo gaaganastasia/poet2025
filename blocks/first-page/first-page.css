@@ -1,0 +1,5 @@
+.first-page {
+  background-color: #ffc605;
+  display: flex;
+  flex-direction: column;
+}

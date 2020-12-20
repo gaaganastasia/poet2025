@@ -1,0 +1,14 @@
+.skull {
+  width: 390px;
+  height: 502px;
+  position: relative;
+  align-self: center;
+}
+
+.skull:hover .skull__top {
+  transform: translate(0px, 15px);
+}
+
+.skull:hover .skull__bottom {
+  transform: translate(0px, -15px);
+}
