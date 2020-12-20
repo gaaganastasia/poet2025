@@ -49,3 +49,7 @@
 @import url(../blocks/popup/__card-text/popup__card-text.css);
 @import url(../blocks/popup/__poem-author/popup__poem-author.css);
 @import url(../blocks/popup/__card/popup__card.css);
+
+@import url(../blocks/page/_height/page_height.css);
+@import url(../blocks/page/_height/page_height2.css);
+@import url(../blocks/page/__footer/page__footer.css);
