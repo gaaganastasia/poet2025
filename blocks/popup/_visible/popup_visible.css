@@ -1,0 +1,6 @@
+.popup_visible{
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 0s, 0s;
+  height: 84.26vh;
+}

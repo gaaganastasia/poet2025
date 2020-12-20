@@ -1,0 +1,8 @@
+.popup__close{
+  background-image: url('../../../images/codicon_chrome-close.svg');
+  position: absolute;
+  top: 44px;
+  left: 54px;
+  width: 40px;
+  height: 40px;
+}

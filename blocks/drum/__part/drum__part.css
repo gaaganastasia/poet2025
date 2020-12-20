@@ -1,0 +1,7 @@
+.drum__part{
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  width:  651px;
+  height: 650px;
+}

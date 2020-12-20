@@ -1,0 +1,6 @@
+.page__button{
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}

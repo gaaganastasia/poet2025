@@ -1,0 +1,11 @@
+.popup__card{
+  transform: rotate(-16deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #ffffff;
+  width: 371px;
+  height: 538px;
+  box-sizing: border-box;
+  padding: 36px 32px 23px 32px;
+}
