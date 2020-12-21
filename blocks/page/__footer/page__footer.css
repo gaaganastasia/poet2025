@@ -1,0 +1,4 @@
+.page__footer{
+  height: calc(100vh - 84.26vh);
+  min-height: 0;
+}
