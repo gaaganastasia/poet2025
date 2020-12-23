@@ -1,4 +1,9 @@
 .card__img {
   margin-bottom: 24px;
   cursor: pointer;
+  transition: ease-in-out .3s;
+}
+
+.card__img:hover {
+  transform: scale(1.05, 1.05);
 }

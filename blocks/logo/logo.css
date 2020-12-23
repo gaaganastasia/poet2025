@@ -3,4 +3,10 @@
   margin: 32px 0 0 52px;
   width: 140px;
   height: 140px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.logo:hover {
+  opacity: .8;
 }
