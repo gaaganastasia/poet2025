@@ -9,6 +9,7 @@
   color: #ffffff;
   cursor: pointer;
   transition: 0.3s;
+  font-family: 'Montserrat';
 }
 
 .first-page__button:hover {

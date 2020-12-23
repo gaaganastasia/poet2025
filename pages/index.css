@@ -1,4 +1,8 @@
 @import url(../vendor/normalize.css);
+@import url(../vendor/fonts/CormorantSC/stylesheet.css);
+@import url(../vendor/fonts/Journalism/stylesheet.css);
+@import url(../vendor/fonts/Montserrat/stylesheet.css);
+
 @import url(../blocks/body/body.css);
 @import url(../blocks/logo/logo.css);
 

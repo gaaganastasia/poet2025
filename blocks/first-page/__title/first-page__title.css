@@ -1,4 +1,10 @@
 .first-page__title {
   align-self: center;
   margin-top: 116px;
+  font-family: 'Journalism';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 64px;
+  line-height: 64px;
+  letter-spacing: 0.04em;
 }

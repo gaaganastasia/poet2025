@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'JOURNALISM';
+    src: url('JOURNALISM.eot');
+    src: local('JOURNALISM'),
+        url('JOURNALISM.eot?#iefix') format('embedded-opentype'),
+        url('JOURNALISM.woff2') format('woff2'),
+        url('JOURNALISM.woff') format('woff'),
+        url('JOURNALISM.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+

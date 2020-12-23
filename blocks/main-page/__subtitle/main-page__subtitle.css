@@ -1,9 +1,11 @@
 .main-page__subtitle {
   max-width: 606px;
-  text-align: center;
+  font-family: 'Montserrat';
+  font-style: normal;
   font-weight: normal;
   font-size: 20px;
   line-height: 125%;
+  text-align: center;
   opacity: .5;
   margin-bottom: 81px;
 }

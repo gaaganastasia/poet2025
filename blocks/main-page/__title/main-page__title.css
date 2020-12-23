@@ -1,8 +1,10 @@
 .main-page__title {
   max-width: 918px;
-  text-align: center;
-  margin: 60px 0 44px;
+  font-family: 'Cormorant SC';
+  font-style: normal;
   font-weight: bold;
   font-size: 52px;
   line-height: 105%;
+  text-align: center;
+  margin: 60px 0 44px;
 }

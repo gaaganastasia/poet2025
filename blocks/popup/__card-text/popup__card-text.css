@@ -1,3 +1,6 @@
 .popup__card-text{
   text-align: center;
+  font-family: 'Montserrat';
+  font-size: 20px;
+  line-height: 24px;
 }

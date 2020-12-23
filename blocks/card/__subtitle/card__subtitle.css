@@ -1,5 +1,8 @@
 .card__subtitle {
   margin: 7px 0 0;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
   font-size: 16px;
   line-height: 20px;
 }
