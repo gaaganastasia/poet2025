@@ -3,5 +3,6 @@
   opacity: 1;
   transition-delay: 0s, 0s;
   /* height: 84.26vh; */
-  height: calc(100vh - 191px);
+  /*height: calc(100vh - 191px);*/
+  height: 100vh;
 }

@@ -23,13 +23,13 @@ function closePopupWindow(popup){
 
 
 startCardButton.addEventListener('click', (evt) =>{
-  addClass(drumPart, 'page_height2');
+  //addClass(drumPart, 'page_height2');
   addClass(pageDoc, 'page_height');
   openPopupWindow(popupWindow);
 });
 
 closeCardButon.addEventListener('click', (evt) =>{
-  remClass(drumPart, 'page_height2');
+  //remClass(drumPart, 'page_height2');
   remClass(pageDoc, 'page_height');
   closePopupWindow(popupWindow);
 });
