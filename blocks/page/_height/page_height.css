@@ -1,3 +1,4 @@
 .page_height{
-  height: calc(100vh - 191px);
+  /*height: calc(100vh - 191px);*/
+  height: 100vh;
 }
