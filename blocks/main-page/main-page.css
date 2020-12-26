@@ -1,7 +1,18 @@
 .main-page {
-  height: 718px;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #ffc605;
+}
+
+@media screen and (min-width: 375px) and (max-width: 1044px) {
+  .main-page {
+    height: 560px;
+  }
+}
+
+@media screen and (min-width: 1044px) {
+  .main-page {
+    height: 718px;
+  }
 }

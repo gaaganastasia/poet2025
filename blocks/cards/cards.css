@@ -1,7 +1,22 @@
 .cards {
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 5px;
-  max-width: 1000px;
   justify-content: center;
+}
+
+@media screen and (min-width: 375px) and (max-width: 1044px) {
+  .cards {
+    display: grid;
+    min-width: 346px;
+    grid-template-columns: 346px;
+    row-gap: 40px;
+    margin-bottom: 24px;
+  }
+}
+
+@media screen and (min-width: 1044px) {
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 5px;
+    max-width: 1000px;
+  }
 }

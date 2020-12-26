@@ -1,9 +1,24 @@
 .footer__text{
-  max-width: 464px;
   color: #ffffff;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
-  line-height: 20px;
+}
+
+@media screen and (min-width: 375px) and (max-width: 1044px) {
+  .footer__text {
+    max-width: 346px;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    margin: 40px 0 24px;
+  }
+}
+
+@media screen and (min-width: 1044px) {
+  .footer__text {
+    font-size: 16px;
+    line-height: 20px;
+    max-width: 464px;
+  }
 }

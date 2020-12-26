@@ -1,9 +1,20 @@
 .card__img {
   margin-bottom: 24px;
-  cursor: pointer;
-  transition: ease-in-out .3s;
 }
 
-.card__img:hover {
-  transform: scale(1.05, 1.05);
+@media screen and (min-width: 375px) and (max-width: 1044px) {
+  .card__img {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1044px) {
+  .card__img {
+    cursor: pointer;
+    transition: ease-in-out .3s;
+  }
+
+  .card__img:hover {
+    transform: scale(1.05, 1.05);
+  }
 }

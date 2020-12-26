@@ -1,10 +1,23 @@
 .main-page__title {
-  max-width: 918px;
   font-family: 'Cormorant SC';
   font-style: normal;
   font-weight: bold;
-  font-size: 52px;
   line-height: 105%;
   text-align: center;
-  margin: 60px 0 44px;
+}
+
+@media screen and (min-width: 375px) and (max-width: 1044px) {
+  .main-page__title {
+    margin: 40px 0 24px;
+    font-size: 28px;
+    max-width: 346px;
+  }
+}
+
+@media screen and (min-width: 1044px) {
+  .main-page__title {
+    max-width: 918px;
+    font-size: 52px;
+    margin: 60px 0 44px;
+  }
 }

@@ -1,14 +1,27 @@
 .card {
   display: grid;
-  width: 320px;
-  height: 585px;
-  margin: 0 20px 44px 0;
 }
 
-.card:nth-child(3) {
-  margin-right: 0;
+@media screen and (min-width: 375px) and (max-width: 1044px) {
+  .card {
+    width: 346px;
+    height: 602px;
+    margin: 0;
+  }
 }
 
-.card:last-child {
-  margin-right: 0;
+@media screen and (min-width: 1044px) {
+  .card {
+    width: 320px;
+    height: 585px;
+    margin: 0 20px 44px 0;
+  }
+
+  .card:nth-child(3) {
+    margin-right: 0;
+  }
+
+  .card:last-child {
+    margin-right: 0;
+  }
 }

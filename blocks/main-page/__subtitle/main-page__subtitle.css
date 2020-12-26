@@ -1,11 +1,24 @@
 .main-page__subtitle {
-  max-width: 606px;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: normal;
-  font-size: 20px;
   line-height: 125%;
   text-align: center;
   opacity: .5;
-  margin-bottom: 81px;
+}
+
+@media screen and (min-width: 375px) and (max-width: 1044px) {
+  .main-page__subtitle {
+    max-width: 303px;
+    margin-bottom: 52px;
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 1044px) {
+  .main-page__subtitle {
+    max-width: 606px;
+    font-size: 20px;
+    margin-bottom: 81px;
+  }
 }

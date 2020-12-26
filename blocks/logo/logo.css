@@ -1,12 +1,25 @@
 .logo {
   align-self: flex-start;
-  margin: 32px 0 0 52px;
-  width: 140px;
-  height: 140px;
   cursor: pointer;
   transition: .3s;
 }
 
-.logo:hover {
-  opacity: .8;
+@media screen and (min-width: 375px) and (max-width: 1044px) {
+  .logo {
+    width: 64px;
+    height: 64px;
+    margin: 24px 0 28px 15px;
+  }
+}
+
+@media screen and (min-width: 1044px) {
+  .logo {
+    margin: 32px 0 0 52px;
+    width: 140px;
+    height: 140px;
+  }
+
+  .logo:hover {
+    opacity: .8;
+  }
 }

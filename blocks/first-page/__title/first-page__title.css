@@ -1,10 +1,25 @@
 .first-page__title {
   align-self: center;
-  margin-top: 116px;
   font-family: 'Journalism';
   font-style: normal;
   font-weight: normal;
-  font-size: 64px;
-  line-height: 64px;
+  text-align: center;
   letter-spacing: 0.04em;
+}
+
+@media screen and (min-width: 375px) and (max-width: 1044px) {
+  .first-page__title {
+    margin-top: 52px;
+    max-width: 281px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+@media screen and (min-width: 1044px) {
+  .first-page__title {
+    margin-top: 116px;
+    font-size: 64px;
+    line-height: 64px;
+  }
 }

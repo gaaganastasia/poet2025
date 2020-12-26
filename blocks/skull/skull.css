@@ -1,6 +1,4 @@
 .skull {
-  width: 390px;
-  height: 502px;
   position: relative;
   align-self: center;
 }
@@ -11,4 +9,18 @@
 
 .skull:hover .skull__bottom {
   transform: translate(0px, -15px);
+}
+
+@media screen and (min-width: 375px) and (max-width: 1044px) {
+  .skull {
+    width: 346px;
+    height: 446px;
+  }
+}
+
+@media screen and (min-width: 1044px) {
+  .skull {
+    width: 390px;
+    height: 502px;
+  }
 }
