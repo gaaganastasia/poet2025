@@ -41,7 +41,7 @@ const cardAuthor = document.querySelector('.popup__poem-author');
 const cardTitle = document.querySelector('.popup__poem-title');
 
 function getPoem() {
-  fetch('http://buymebuyme.xyz', {
+  fetch('https://buymebuyme.xyz', {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json'
