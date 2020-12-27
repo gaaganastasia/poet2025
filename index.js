@@ -3,7 +3,7 @@ const startCardButton = document.querySelector('.drum__part_type_button');
 const closeCardButon = document.querySelector('.popup__close');
 const pageDoc = document.querySelector('.page__wrapper');
 const footer = document.querySelector('.footer');
-const drumPart = document.querySelector('.drum__part');
+const drumPart = document.querySelector('.drum__part_type_item');
 
 function addClass(elem , classlist){
   elem.classList.add(`${classlist}`);
@@ -20,13 +20,44 @@ function closePopupWindow(popup){
   remClass(popup, 'popup_visible');
 }
 
+const authors = {
+  1:  'Анна Ахматова',
+  2:  'Михаил Лермонтов',
+  3:  'Александ Блок',
+  6:  'Владимир Маяковский',
+  7:  'Сергей Есенин',
+  10: 'Марина Цветаева',
+  11: 'Иван Бунин',
+  13: 'Иосиф Бродский',
+  14: 'Фёдор Тютчев',
+}
 
+getRandomInt = (max) => Math.floor(Math.random() * Math.floor(max));
+let randAuthor = getRandomInt(Object.keys(authors).length);
+console.log(authors[randAuthor]);
 
-startCardButton.addEventListener('click', (evt) =>{
-  //addClass(drumPart, 'page_height2');
-  addClass(pageDoc, 'page_height');
-  openPopupWindow(popupWindow);
-});
+function sleep(ms) {
+  return new Promise(
+    resolve => setTimeout(resolve, ms)
+  );
+}
+
+async function rotateDrum(){
+  var delayInMilliseconds = 2000;
+  addClass(drumPart, 'drum_rotation');
+  await sleep(delayInMilliseconds);
+  drumPart.style.transform = `rotate(${randAuthor*25}deg)`;
+}
+
+async function handleStartButton(){
+  var delayInMilliseconds = 3000;
+  rotateDrum();
+  await sleep(delayInMilliseconds);
+  //addClass(pageDoc, 'page_height');
+  openPopupWindow(popupWindow)
+  //setTimeout(openPopupWindow(popupWindow), delayInMilliseconds);
+}
+startCardButton.addEventListener('click', handleStartButton);
 
 closeCardButon.addEventListener('click', (evt) =>{
   //remClass(drumPart, 'page_height2');

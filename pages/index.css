@@ -32,10 +32,12 @@
 @import url(../blocks/header/header.css);
 
 @import url(../blocks/drum/drum.css);
+@import url(../blocks/drum/__wrapper/drum__wrapper.css);
 @import url(../blocks/drum/__part/drum__part.css);
 @import url(../blocks/drum/__part/_type/drum__part_type_button.css);
 @import url(../blocks/drum/__part/_type/drum__part_type_shadow.css);
 @import url(../blocks/drum/__part/_type/drum__part_type_item.css);
+@import url(../blocks/drum/_rotation/drum_rotation.css);
 
 @import url(../blocks/footer/footer.css);
 @import url(../blocks/footer/__wrapper/footer__wrapper.css);
@@ -47,9 +49,9 @@
 @import url(../blocks/popup/popup.css);
 @import url(../blocks/popup/_visible/popup_visible.css);
 @import url(../blocks/popup/__close/popup__close.css);
+@import url(../blocks/popup/__card-text/popup__card-text.css);
 @import url(../blocks/popup/__poem/popup__poem.css);
 @import url(../blocks/popup/__poem-title/popup__poem-title.css);
-@import url(../blocks/popup/__card-text/popup__card-text.css);
 @import url(../blocks/popup/__poem-author/popup__poem-author.css);
 @import url(../blocks/popup/__card/popup__card.css);
 
