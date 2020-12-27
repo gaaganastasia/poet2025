@@ -78,7 +78,7 @@ const cardAuthor = document.querySelector('.popup__poem-author');
 const cardTitle = document.querySelector('.popup__poem-title');
 
 function getPoem() {
-  fetch('https://buymebuyme.xyz', {
+  /*fetch('https://buymebuyme.xyz', {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json'
@@ -101,9 +101,9 @@ function getPoem() {
       cardAuthor.textContent = `${randomPoem.fields.author}`
     }
     console.log(randAuthor);
-  })
+  })*/
 
-  /*fetch('http://buymebuyme.xyz', {
+  fetch('http://buymebuyme.xyz', {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json'
@@ -114,12 +114,25 @@ function getPoem() {
   }).then((res) => {
     let arr = [];
     res.forEach((item) => {
-      if (item.fields.author === 'Марина Цветаева') {
+      if (item.fields.author === authors[randAuthor]) {
         arr.push(item)
       }
     })
-    console.log(arr);
-  })*/
+
+    let rand = Math.random() * (arr.length + 1);
+    const randomNumber = Math.floor(rand);
+    const randomPoem = arr[randomNumber - 1];
+    const poemStr = randomPoem.fields.text.split('\n', 4);
+    cardText.textContent = poemStr.join('\n');
+    cardTitle.textContent = randomPoem.fields.name;
+    const poemDate = randomPoem.fields.date_from;
+    if (randomPoem.fields.date_to) {
+      cardAuthor.textContent = `${randomPoem.fields.author}, ${poemDate}`
+    }
+    else {
+      cardAuthor.textContent = `${randomPoem.fields.author}`
+    }
+  })
 }
 
 getPoem()
