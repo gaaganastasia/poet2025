@@ -10,3 +10,9 @@
   justify-content: center;
   align-items: center;
 }
+
+@media screen and (max-height: 1050px){
+  .popup__arm{
+
+  }
+}
