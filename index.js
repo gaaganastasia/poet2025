@@ -124,13 +124,19 @@ function getPoem() {
     const randomPoem = arr[randomNumber - 1];
     const poemStr = randomPoem.fields.text.split('\n', 4);
     cardText.textContent = poemStr.join('\n');
-    cardTitle.textContent = randomPoem.fields.name;
     const poemDate = randomPoem.fields.date_from;
     if (randomPoem.fields.date_to) {
       cardAuthor.textContent = `${randomPoem.fields.author}, ${poemDate}`
     }
     else {
       cardAuthor.textContent = `${randomPoem.fields.author}`
+    }
+
+    if (randomPoem.fields.name) {
+      cardTitle.textContent = randomPoem.fields.name;
+    }
+    else {
+      cardTitle.textContent = `${randomPoem.fields.text.split('\n', 1)}...`
     }
   })
 }
