@@ -1,5 +1,4 @@
 .popup{
-  position: relative;
   overflow: hidden;
   visibility: hidden;
   position: absolute;
@@ -17,4 +16,5 @@
   transition-property: opacity, height;
   transition-duration: .5s, 0s;
   transition-delay: 0s, .5s;
+  background-image: url(../../images/face.png);
 }
