@@ -53,12 +53,9 @@ function getPoem() {
     let rand = Math.random() * (res.length + 1);
     const randomNumber = Math.floor(rand);
     const randomPoem = res[randomNumber - 1];
-    console.log(randomPoem);
     const poemStr = randomPoem.fields.text.split('\n', 4);
-    const poemTitle = randomPoem.fields.text.split('\n', 1);
-    console.log(poemStr);
     cardText.textContent = poemStr.join('\n');
-    cardTitle.textContent = `${poemTitle}...`;
+    cardTitle.textContent = randomPoem.fields.name;
     const poemDate = randomPoem.fields.date_from;
     if (randomPoem.fields.date_to) {
       cardAuthor.textContent = `${randomPoem.fields.author}, ${poemDate}`
@@ -67,6 +64,24 @@ function getPoem() {
       cardAuthor.textContent = `${randomPoem.fields.author}`
     }
   })
+
+  /*fetch('http://buymebuyme.xyz', {
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+  })
+  .then((res) => {
+    return res.json();
+  }).then((res) => {
+    let arr = [];
+    res.forEach((item) => {
+      if (item.fields.author === 'Марина Цветаева') {
+        arr.push(item)
+      }
+    })
+    console.log(arr);
+  })*/
 }
 
 getPoem()

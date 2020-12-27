@@ -10,7 +10,11 @@
   font-weight: normal;
 }
 
-
+.first-page__button,
+.first-page__button:active,
+.first-page__button:focus {
+    outline: none;
+}
 
 @media screen and (min-width: 375px) and (max-width: 1044px) {
   .first-page__button {
