@@ -103,7 +103,7 @@ function getPoem() {
     console.log(randAuthor);
   })*/
 
-  fetch('http://buymebuyme.xyz', {
+  fetch('https://buymebuyme.xyz', {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json'
