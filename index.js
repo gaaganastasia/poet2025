@@ -33,7 +33,9 @@ const authors = {
 }
 
 getRandomInt = (max) => Math.floor(Math.random() * Math.floor(max));
-let randAuthor = getRandomInt(Object.keys(authors).length);
+let randAuthorID = getRandomInt(Object.keys(authors).length);
+let randAuthor = Object.keys(authors)[randAuthorID]
+console.log(randAuthor);
 console.log(authors[randAuthor]);
 
 function sleep(ms) {
@@ -46,7 +48,7 @@ async function rotateDrum(){
   var delayInMilliseconds = 2000;
   addClass(drumPart, 'drum_rotation');
   await sleep(delayInMilliseconds);
-  drumPart.style.transform = `rotate(${randAuthor*25}deg)`;
+  drumPart.style.transform = `rotate(${randAuthorID*25}deg)`;
 }
 
 async function handleStartButton(){
