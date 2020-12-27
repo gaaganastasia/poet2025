@@ -50,7 +50,7 @@ async function rotateDrum(){
   var delayInMilliseconds = 2000;
   addClass(drumPart, 'drum_rotation');
   await sleep(delayInMilliseconds);
-  var degrees = randAuthor * -25;
+  var degrees = (randAuthor * -25)  - 360;
   console.log(randAuthor , degrees);
   drumPart.style.transform = `rotate(${degrees}deg)`;
 }

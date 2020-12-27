@@ -1,84 +1,10 @@
-
 @keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  4.99%,
-  6.66% {
-    transform: rotate(24deg);
-  }
-
-  11.65%,
-  13.32% {
-    transform: rotate(48deg);
-  }
-
-  18.31%,
-  19.98% {
-    transform: rotate(72deg);
-  }
-
-  24.98%,
-  26.65% {
-    transform: rotate(96deg);
-  }
-
-  31.65%,
-  33.33% {
-    transform: rotate(120deg);
-  }
-
-  38.33%,
-  39.98% {
-    transform: rotate(144deg);
-  }
-
-  44.98%,
-  46.65% {
-    transform: rotate(168deg);
-  }
-
-  51.65%,
-  53.33% {
-    transform: rotate(192deg);
-  }
-
-  58.33%,
-  59.99% {
-    transform: rotate(216deg);
-  }
-
-  64.99%,
-  66.66% {
-    transform: rotate(240deg);
-  }
-
-  71.66%, 73.33% {
-    transform: rotate(264deg);
-  }
-
-  78.33%,
-  79.99% {
-    transform: rotate(288deg);
-  }
-
-  84.99%,
-  86.66% {
-    transform: rotate(312deg);
-  }
-
-  91.66%,
-  93.33% {
-    transform: rotate(336deg);
-  }
-
-  98.33%,
-  100% {
-    transform: rotate(360deg);
+  from {
+      transform: rotate(0deg);
+  } to {
+      transform: rotate(360deg);
   }
 }
-
 .drum_rotation{
-  animation: spin 2s linear;
+  animation: spin 2s ease-in-out;
 }

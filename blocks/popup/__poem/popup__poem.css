@@ -7,3 +7,9 @@
   font-style: normal;
   font-weight: normal;
 }
+@media screen and (max-width: 900px){
+  .popup__poem{
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
