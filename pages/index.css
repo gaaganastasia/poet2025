@@ -5,7 +5,7 @@
 
 @import url(../blocks/body/body.css);
 @import url(../blocks/logo/logo.css);
-
+@import url(../blocks/content/content.css);
 @import url(../blocks/first-page/first-page.css);
 @import url(../blocks/first-page/__title/first-page__title.css);
 @import url(../blocks/first-page/__button/first-page__button.css);
@@ -38,7 +38,7 @@
 @import url(../blocks/drum/__part/_type/drum__part_type_shadow.css);
 @import url(../blocks/drum/__part/_type/drum__part_type_item.css);
 @import url(../blocks/drum/_rotation/drum_rotation.css);
-
+@import url(../blocks/drum/__esenin/drum__esenin.css);
 @import url(../blocks/footer/footer.css);
 @import url(../blocks/footer/__wrapper/footer__wrapper.css);
 @import url(../blocks/footer/__text/footer__text.css);
@@ -55,7 +55,7 @@
 @import url(../blocks/popup/__poem-title/popup__poem-title.css);
 @import url(../blocks/popup/__poem-author/popup__poem-author.css);
 @import url(../blocks/popup/__card/popup__card.css);
-
+@import url(../blocks/popup/__arm/popup__arm.css);
 @import url(../blocks/page/_height/page_height.css);
 @import url(../blocks/page/_height/page_height2.css);
 @import url(../blocks/page/__footer/page__footer.css);

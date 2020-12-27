@@ -1,8 +1,4 @@
 .drum__part_type_button{
-
   outline: none;
   background-image: url('../../../../images/drum_button.png');
-  background-position: center;
-  background-size: cover;
-  background-repeat: none;
 }

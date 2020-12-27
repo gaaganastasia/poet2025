@@ -7,6 +7,14 @@
 
 @media screen and (min-width: 375px) and (max-width: 1044px) {
   .footer__list {
+
     margin-bottom: 55px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .footer__list {
+    display: flex;
+    flex-direction: column;
   }
 }

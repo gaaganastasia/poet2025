@@ -16,5 +16,15 @@
   transition-property: opacity, height;
   transition-duration: .5s, 0s;
   transition-delay: 0s, .5s;
-  background-image: url(../../images/face.png);
+  background-image: url(../../images/face2.png);
+  background-position: bottom right;
+  background-size: contain;
+  background-repeat: no-repeat;
+  min-width: 375px;
+}
+
+@media screen and (max-width: 1000px){
+  .popup{
+    background-image: none;
+  }
 }

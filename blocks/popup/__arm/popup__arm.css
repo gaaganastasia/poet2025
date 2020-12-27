@@ -1,0 +1,12 @@
+.popup__arm{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url(../../../images/arm22.png);
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

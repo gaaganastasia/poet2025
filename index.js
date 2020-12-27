@@ -4,6 +4,7 @@ const closeCardButon = document.querySelector('.popup__close');
 const pageDoc = document.querySelector('.page__wrapper');
 const footer = document.querySelector('.footer');
 const drumPart = document.querySelector('.drum__part_type_item');
+const content = document.querySelector('.content');
 
 function addClass(elem , classlist){
   elem.classList.add(`${classlist}`);
@@ -58,7 +59,8 @@ async function handleStartButton(){
   var delayInMilliseconds = 3000;
   rotateDrum();
   await sleep(delayInMilliseconds);
-  //addClass(pageDoc, 'page_height');
+  addClass(pageDoc, 'page_height');
+  content.style.display='none';
   openPopupWindow(popupWindow)
   //setTimeout(openPopupWindow(popupWindow), delayInMilliseconds);
 }

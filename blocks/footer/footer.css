@@ -5,6 +5,7 @@
   min-height: 191px;
   width: 100%;
   background-color: #000000;
+  min-width: 375px;
 }
 
 @media screen and (min-width: 375px) and (max-width: 1044px) {

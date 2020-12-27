@@ -1,0 +1,13 @@
+.drum__esenin{
+  background-image: url(../../../images/esenin.png);
+  width: 75vw;
+  height: 75vh;
+  max-height: 717px;
+  max-width: 365px;
+  min-height: 501px;
+  min-width: 255px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: block;
+  background-position: center;
+}

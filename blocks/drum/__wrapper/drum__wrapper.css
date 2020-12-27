@@ -1,5 +1,17 @@
 .drum__wrapper{
   position: relative;
-  width:  651px;
-  height: 650px;
+  width: calc(100vw / 2);
+  height: 75vh;
+  max-width: 651px;
+  max-height: 650px;
+  min-width: 346px;
+  min-height: 345.47px;
+  margin-right: 28px;
+}
+@media screen and (max-width:928px){
+  .drum__wrapper{
+    width: 100%;
+    height: 100%;
+    margin-right: 0;
+  }
 }

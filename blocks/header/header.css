@@ -2,4 +2,5 @@
   box-sizing: border-box;
   padding-left: 52px;
   padding-top: 32px;
+  min-width: 375px;
 }
