@@ -48,10 +48,24 @@ function sleep(ms) {
 
 async function rotateDrum(){
   var delayInMilliseconds = 2000;
-  addClass(drumPart, 'drum_rotation');
-  await sleep(delayInMilliseconds);
+  //addClass(drumPart, 'drum_rotation');
+  //await sleep(delayInMilliseconds);
   var degrees = (randAuthor * -25)  - 360;
   console.log(randAuthor , degrees);
+  const keyframes =   [
+    { // from
+      transform: "rotate(0deg)",
+    },
+    { // to
+      transform: `rotate(${degrees}deg)`,
+    }
+  ]
+  const options = {
+    easing: "ease-in-out",
+    duration: 2000,
+  }
+
+  drumPart.animate(keyframes, options);
   drumPart.style.transform = `rotate(${degrees}deg)`;
 }
 
