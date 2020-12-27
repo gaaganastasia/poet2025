@@ -23,7 +23,7 @@ function closePopupWindow(popup){
 const authors = {
   1:  'Анна Ахматова',
   2:  'Михаил Лермонтов',
-  3:  'Александ Блок',
+  3:  'Александр Блок',
   6:  'Владимир Маяковский',
   7:  'Сергей Есенин',
   10: 'Марина Цветаева',
@@ -94,6 +94,7 @@ function getPoem() {
     else {
       cardAuthor.textContent = `${randomPoem.fields.author}`
     }
+    console.log(randAuthor);
   })
 
   /*fetch('http://buymebuyme.xyz', {
