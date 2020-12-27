@@ -33,7 +33,10 @@ const authors = {
 }
 
 getRandomInt = (max) => Math.floor(Math.random() * Math.floor(max));
-let randAuthor = getRandomInt(Object.keys(authors).length);
+let randAuthorID = getRandomInt(Object.keys(authors).length);
+// ключ объекта авторов
+let randAuthor = Object.keys(authors)[randAuthorID]
+console.log(randAuthor);
 console.log(authors[randAuthor]);
 
 function sleep(ms) {
@@ -46,7 +49,9 @@ async function rotateDrum(){
   var delayInMilliseconds = 2000;
   addClass(drumPart, 'drum_rotation');
   await sleep(delayInMilliseconds);
-  drumPart.style.transform = `rotate(${randAuthor*25}deg)`;
+  var degrees = randAuthor * -25;
+  console.log(randAuthor , degrees);
+  drumPart.style.transform = `rotate(${degrees}deg)`;
 }
 
 async function handleStartButton(){
@@ -61,6 +66,7 @@ startCardButton.addEventListener('click', handleStartButton);
 
 closeCardButon.addEventListener('click', (evt) =>{
   //remClass(drumPart, 'page_height2');
+  remClass(drumPart, 'drum_rotation');
   remClass(pageDoc, 'page_height');
   closePopupWindow(popupWindow);
 });
