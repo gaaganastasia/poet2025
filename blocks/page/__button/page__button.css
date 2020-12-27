@@ -3,4 +3,5 @@
   background-color: transparent;
   border: none;
   outline: none;
+  z-index: 2;
 }
