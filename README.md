@@ -12,4 +12,4 @@
 - [JS]
 * Информация, как собрать проект: Запустить index.html
 * Ссылка на демо на Github Pages:
--[Ссылка на страницу проекта](https://gaaganastasia.github.io/poet2025/pages/index.html)
+-[Ссылка на страницу проекта](https://gaaganastasia.github.io/poet2025/index.html)
